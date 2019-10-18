@@ -1,0 +1,35 @@
+body{
+    width: 80%;
+    margin: 0 auto;
+    font-family: arial;
+    background-color: #e6e6e6;
+}
+
+h1 {
+    color: #2980b9;
+    margin-top: 20px;
+}
+
+.data-movie{
+    display: none;
+}
+
+form{
+    text-align: center;
+}
+
+input {
+    border: 10px solid #000000;
+    border-radius: 30px;
+    width: 80%;
+    opacity: 0.8;
+    padding: 20px;
+    font-size: 30px;
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+
+img.poster{
+    float: left;
+    margin-right: 20px;
+}
