@@ -14,9 +14,11 @@ document.querySelector("form").addEventListener("submit", (e)=>{
 
     fetch(`/search?movie=${search}`).then(response =>{
         response.json().then(result =>{
+
+            console.log("responseeeeeee", result);
             console.log(result);
             dataMovie.style.display = "block";
-            title.textContent = result.Director;
+            title.textContent = result.Resp.Director;
             imdb.textContent = result.Ratings[0].Value;
             tomatoes.textContent = result.Ratings[1].Value;
             metacritic.textContent = result.Ratings[2].Value;
