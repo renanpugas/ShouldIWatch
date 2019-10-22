@@ -27,6 +27,7 @@ app.get("/search", async (req, res, next)=>{
     try {
         const omdbResp = await request({uri: urlOMDB, json: true});
         const myAPIResp = await request({uri: urlMyApi, json: true}); 
+        const results = calcScore();
 
         res.send({omdbResp, myAPIResp});
 
